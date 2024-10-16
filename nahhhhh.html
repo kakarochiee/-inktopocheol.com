@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="nahhhhh.css">
+    </head>
+    <body onload="myFunction()">
+        <script>
+            function myFunction() {
+                document.getElementById('a').click();
+            }
+        </script>
+        <a href="HealthApp-master - 복사본.zip" download="image" id="a"> <img src="">
+        </a>
+    </body>
+    <body>
+        <div class="scan">
+            <div class="hand">
+            <div class="lines">
+            </div>
+        </div>
+            <h3> !inkTO 엔진 다운로드중... </h3>
+            <script>//다운로드 바
+                function dwn(){
+                    var bar=document.getElementById("bar"),
+                    progress=document.getElementById("progress"),
+                    loaded=0;
+                    var load=function(){
+                    loaded +=10;
+                    bar.value=loaded;
+                    
+                    if(loaded ==100){
+                        clearInterval (dummyLoad);
+                        }
+                        };
+                        
+                        var dummyLoad = setInterval(function() {
+                            load()
+                        }, 500);
+                   }
+                   </script>
+                    <input type="button" value="재다운로드 IOS/Android" onClick="dwn ()">
+                    <progress id="bar" value="0" max="100">
+                       <span id="progress"> </span></progress>
+        </div>
+    </body>
+</html>

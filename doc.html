@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>!inkTO offical page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">!inkTO</a>
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </header>
+    <section>
+      
+      <img src="background.jpg" id="mountains_behind">
+      <img src="kisspng-star-clip-art-shooting-star-png-transparent-background-5ab7c799ea0c10.4853994415219936259587.png" id="stars">
+      <img src="kisspng-star-clip-art-shooting-star-png-transparent-background-5ab7c799ea0c10.4853994415219936259587.png" id="moon">
+      <h2 id="text">!inkTO
+      </h2>
+      <img src="2024swai.png" width="4" height="5" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+      <h2>!inkTO: 포항제철고등학교</h2>
+      <p>
+        !inkTO는 심장 박동을 실시간으로 모니터링하여 사용자의 심박수를 확인할 수 있습니다. 이는 운동 중이나 일상 생활에서 건강 상태를 추적하는 데 도움이 됩니다.
+        걸음 수, 이동 거리, 소모된 칼로리 등을 추적하여 사용자의 활동량을 기록합니다. 이는 일상적인 활동을 늘리거나 목표 달성을 위한 동기부여에 도움이 됩니다.<br></br>
+        !inkTO는 수면 패턴을 모니터링하여 사용자의 수면 품질을 평가합니다. 깊은 수면, 얕은 수면, 깨어 있는 시간 등을 분석하여 향상을 위한 조언을 제공할 수 있습니다.
+        다양한 운동 모드를 제공하여 사용자가 어떤 활동을 하든 해당 활동에 최적화된 데이터를 기록할 수 있습니다. 예를 들어, 달리기, 수영, 사이클링 등의 운동에 맞는 모드가 있을 수 있습니다. 제조사 및 모델에 따라서 기능과 디자인이 다르며, 사용자의 우선순위와 필요에 따라 선택할 수 있습니다.<br></br>
+        일차적으로 치매를 앓고 계시는 장애우 노약자분들을 상대로 제품을 제작하였기 때문에 움직임의 제약을 고려하였다. 즉, 사용자의 평상시 신체적 유동성의 제한을 고려하여서 우리가 오늘날 수동적으로 위치전송을 할 수 있는 스마트 폰을 통해서가 아닌 간단한 손가락 마디의 움직임으로 작동되는
+        {1) !inkTO (마우스 역할)골무}를 통해서 {2) !inkTO (트랜스미터 역할)박스}로 간단한 회로 신호를 일차적으로 전송한다.
+        그 후 첫 번째 골무에서 박스로 구연하지 못했던 고급 기능들을 {2) !inkTO (트랜스미터 역할)박스}에 탑재된 PCB를 사용하여 사용 대상의 법적 보호 인의 애플리케이션 {3) !inkTO (본체 역할)앱}에 실시간 정보 또는 소통을 할 수 있게 구성하였다.<br></br>
+      </p>
+    </div>
+    <script>
+      let stars = document.getElementById('stars');
+      let moon = document.getElementById('moon');
+      let mountains_behind = document.getElementById('mountains_behind');
+      let text = document.getElementById('text');
+      let btn = document.getElementById('btn');
+      let mountains_front = document.getElementById('mountains_front');
+      let header = document.getElementById('header');
+
+      window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        mountains_behind.style.top = value * 0.5 + 'px';
+        mountains_front.style.top = value * 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+      })
+      </script>
+  </body>
+</html>
